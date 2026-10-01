@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --bg-ivory: #F9F6EE;
+  --accent-orange: #FF5722;
+  --accent-orange-rgb: 255, 87, 34;
+  --text-primary: #18181B;
+  --text-secondary: #57534E;
+  --border-subtle: #E8E2D5;
+}
+
+@layer utilities {
+  .bg-ivory-dots {
+    background-color: #F9F6EE;
+    background-image: radial-gradient(#DFD7C2 1.5px, transparent 1.5px);
+    background-size: 36px 36px;
+  }
+
+  .glow-orange-sm {
+    box-shadow: 0 4px 14px rgba(255, 87, 34, 0.2);
+  }
+
+  .glow-orange-md {
+    box-shadow: 0 8px 24px rgba(255, 87, 34, 0.25);
+  }
+}
+
+/* Sleek minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CFB9;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5722;
+}

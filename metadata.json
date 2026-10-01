@@ -1,0 +1,8 @@
+{
+  "name": "비오밋 (BEOMIT) - Premium Logo Design & Mobile Games",
+  "description": "비오밋(BEOMIT)은 럭셔리 하이테크 브랜드 아이덴티티와 차세대 모바일 게임을 개발하는 프리미엄 크리에이티브 스튜디오입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
