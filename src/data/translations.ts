@@ -189,7 +189,7 @@ export const translations: Record<Language, SiteTranslation> = {
       tag: '02. WORK',
       title: 'GAMES',
       subtitle: 'Discover the mobile game titles crafted with passion by beeorbit.',
-      gameTitle: 'Don't worry',
+      gameTitle: 'Don\'t worry',
       gameGenre: 'Casual Idle RPG',
       gameGenreEn: 'Casual Idle RPG',
       gameDescription:
