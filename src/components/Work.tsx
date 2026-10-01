@@ -1,18 +1,16 @@
 import React from 'react';
 import { DonworryIcon } from './DonworryIcon';
-import { Smartphone, CheckCircle2, Camera } from 'lucide-react';
+import { Smartphone, CheckCircle2 } from 'lucide-react';
 import { SiteTranslation } from '../data/translations';
 
 interface WorkProps {
   content: SiteTranslation['work'];
   gameIconUrl?: string;
-  onOpenEditor?: () => void;
 }
 
 export const WorkSection: React.FC<WorkProps> = ({
   content,
   gameIconUrl,
-  onOpenEditor,
 }) => {
   return (
     <section id="work" className="py-24 bg-ivory-dots relative border-b border-[#E5DEC9]">
@@ -49,18 +47,6 @@ export const WorkSection: React.FC<WorkProps> = ({
                 <div className="absolute -bottom-2 -right-2 px-2.5 py-1 bg-[#18181B] text-white text-[11px] font-mono rounded shadow-xs">
                   MOBILE
                 </div>
-
-                {/* Direct Icon Change Button Trigger */}
-                {onOpenEditor && (
-                  <button
-                    onClick={onOpenEditor}
-                    className="absolute top-2 right-2 p-2 rounded-full bg-white/95 hover:bg-white text-[#18181B] hover:text-[#FF5722] border border-[#E5DEC9] shadow-sm transition-all opacity-80 group-hover:opacity-100 flex items-center gap-1 text-[11px] font-mono font-bold cursor-pointer"
-                    title={content.changeIconBtn}
-                  >
-                    <Camera className="w-3.5 h-3.5 text-[#FF5722]" />
-                    <span className="hidden sm:inline">{content.changeIconBtn}</span>
-                  </button>
-                )}
               </div>
             </div>
 
